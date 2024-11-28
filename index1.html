@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="keywords" content="form example , html, css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Personal {
+            background-color: rgb(41, 121, 178);
+            height: fit-content;
+            width: fit-content;
+        }
+
+        #your {
+            height: 90px;
+            background-color: rgb(41, 121, 178);
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 9px;
+        }
+
+        .sq {
+            padding-top: 80px;
+            padding-bottom: 20px;
+            background-color: #f69f42;
+            margin-bottom: 20px;
+        }
+
+        #par {
+            margin-bottom: 20px;
+        }
+
+        #sub {
+            width: 80px;
+            height: 40px;
+            background-color: black;
+            color: white;
+
+        }
+
+        select {
+            width: 150px;
+        }
+
+        span {
+            font-weight: 900;
+        }
+
+        #sub a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: red;">
+    <p id="Personal">Personal Data </p>
+    <p id="your">Your Name</p>
+    <div class="sq">
+        <table>
+            <tr>
+                <td> <label for="first">First Name </label>
+                </td>
+                <td>:</td>
+                <td> <input type=" text" id="first" name="first name" placeholder="ex.ahmed" /></td>
+            </tr>
+
+
+            <tr>
+                <td> <label for="second">Second Name </label></td>
+                <td>:</td>
+                <td><input type="text" id="second" name="second name" placeholder="ex.bahnasy" /></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="par">
+        <table>
+            <tr>
+                <td> <label for="phone"><span>your phone</span> </label></td>
+                <td>:</td>
+                <td> <input type="tel" id="phone" name="phone" /></td>
+            </tr>
+            <tr>
+                <td><label for="email"><span>Email</span> </label></td>
+                <td>:</td>
+                <td> <input type="email" id="email" name="email" /></td>
+            </tr>
+
+            <tr>
+                <td><label for="pass"><span>Password </span></label></td>
+                <td>:</td>
+                <td> <input type="password" id="pass" name="password" /></td>
+            </tr>
+            <tr>
+                <td><label for="repass"><span>re-password</span> </label></td>
+                <td>:</td>
+                <td><input type="password" id="repass" name="repassword" /></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div id="rad">
+        <table>
+            <tr>
+                <td> <input type="radio" id="male" name="gender" value="male" /></td>
+                <td><label for="male">Male</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="female" name="gender" value="female" /></td>
+                <td><label for="female">Famle</label></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <br>
+    <div id="che">
+        <table>
+            <tr>
+                <td> <input type="checkbox" id="student" name="data" value="student" /></td>
+                <td><label for="student">Student</label></td>
+            </tr>
+            <tr>
+                <td> <input type="checkbox" id="dra" name="data" value="draduated" /></td>
+                <td><label for="dra">draduated</label></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+
+
+
+
+    <div id="sel"><select name="country">
+            <optgroup label="Group 1">
+                <option value="USD">USD</option>
+            </optgroup>
+            <optgroup label="Group 2">
+                <option value="UNK">UK</option>
+                <option value="AUC">AUC</option>
+            </optgroup>
+            <optgroup label="Group 3"></optgroup>
+            <option value="BUC">UK</option>
+            <option value="NFC">NFC</option>
+            <option value="VMV">VMV</option>
+            </optgroup>
+        </select></div>
+    <button type="submit" id="sub"><a href="index.html">Submit</a> </button>
+    </form>
+
+</body>
+
+</html>
